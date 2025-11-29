@@ -1,0 +1,19 @@
+name: GitHub Actions Quickstart
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Run a multi-line script
+        run: |
+          echo "Workflow działa poprawnie"
+          ls -la
